@@ -1,4 +1,4 @@
-package com.example.firebasecrud
+package com.example.crudadmin
 
 import android.accessibilityservice.GestureDescription.StrokeDescription
 
