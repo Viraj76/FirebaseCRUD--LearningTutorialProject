@@ -15,8 +15,24 @@ class MainActivity : AppCompatActivity() {
         binding.mainUpload.setOnClickListener {
             val intent = Intent(this,UploadActivity::class.java)
             startActivity(intent)
-            finish()
+
         }
+
+        binding.mainUpdate.setOnClickListener {
+            val intent = Intent(this,UpdateActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.mainDelete.setOnClickListener {
+            val intent = Intent(this,DeleteActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.mainRead.setOnClickListener {
+            val intent = Intent(this,ReadActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }
