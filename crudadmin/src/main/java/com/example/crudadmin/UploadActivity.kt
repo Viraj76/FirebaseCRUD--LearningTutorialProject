@@ -3,6 +3,7 @@ package com.example.crudadmin
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.WindowManager
 import android.widget.Toast
 import com.example.crudadmin.databinding.ActivityMainBinding
 import com.example.crudadmin.databinding.ActivityUploadBinding
@@ -28,7 +29,7 @@ class UploadActivity : AppCompatActivity() {
             val users = UsersData(name,operator,location,phone)
 
             dataBaseReference
-                .child(name)
+                .child(phone)
                 .setValue(users)
                 .addOnSuccessListener {
 
