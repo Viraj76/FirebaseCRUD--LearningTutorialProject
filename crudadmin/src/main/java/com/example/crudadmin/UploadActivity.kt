@@ -11,8 +11,10 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
 class UploadActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityUploadBinding
     lateinit var  dataBaseReference: DatabaseReference
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityUploadBinding.inflate(layoutInflater)

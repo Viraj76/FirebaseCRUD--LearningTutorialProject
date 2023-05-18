@@ -8,12 +8,15 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
 class ReadActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityReadBinding
     private lateinit var databaseReference: DatabaseReference
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityReadBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         binding.searchButton.setOnClickListener {
             val searchPhone : String = binding.searchPhone.text.toString()
             if  (searchPhone.isNotEmpty()){
